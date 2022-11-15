@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Formulário de contato para envio de email usando uma fetch">
+	<title>Formulário de Contato</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form class="formulario" id="formulario">
+		<h1 class="formulario_titulo">Contato</h1>
+		<p class="formulario_mensagens"></p>
+		<label class="formulario_rotulo">Nome* </label><br>
+		<input class="formulario_campo" name="nome" type="text" ><br><br>
+
+		<label class="formulario_rotulo">E-mail * </label><br>
+		<input class="formulario_campo" name="email" type="text" placeholder="seuemail@email.com"><br><br>
+
+		<label class="formulario_rotulo">Assunto * </label><br>
+		<input class="formulario_campo " name="assunto" type="text" placeholder="assunto da mensagem"><br><br>
+
+		<label class="formulario_rotulo">Mensagem* </label><br>
+		<textarea class="formulario_campo-mensagem" name="mensagem" placeholder="sua mensagem"></textarea><br><br>
+
+		<p class="formulario_campo-obrigatorio">* campos com preechimento obrigatório</p>
+
+		<button class="formulario_btn  formulario_btn--ativo" type="submit">Enviar</button>
+    </form> 
+
+	
+	<script src="script1.js"></script>
+	<script src="api.js"></script>
+</body>
+</html>
